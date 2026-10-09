@@ -118,7 +118,7 @@ document.getElementById("cartBtn").addEventListener("click",()=>{
  const lines=cart.map(item=>{const p=products.find(x=>x.id===item.id);return `${p.name} x ${item.qty} — ${money(p.price*item.qty)}`});
  const total=cart.reduce((sum,item)=>sum+products.find(p=>p.id===item.id).price*item.qty,0);
  const message=`Hello Online Gadget Sales! I want to order:\n${lines.join("\n")}\nTotal: ${money(total)}\nPlease confirm availability and delivery.`;
- window.open("https://wa.me/8801717709878?text="+encodeURIComponent(message),"_blank","noopener");
+ window.open("https://wa.me/8801717-709878?text="+encodeURIComponent(message),"_blank","noopener");
 });
 document.getElementById("whatsappBanner").href="https://wa.me/8801712345678?text="+encodeURIComponent("Hello Online Gadget Sales! I would like to know more about your products.");
 document.getElementById("accountBtn").addEventListener("click",()=>showToast("Customer account feature is not set up yet."));
