@@ -83,7 +83,7 @@ footer{background:var(--navy);color:#eaf1fb;padding:35px 0 14px}.footer-grid{dis
 const products = [
  {id:1,name:"iPhone 15 (128GB)",desc:"Apple iPhone 15 128GB",category:"Mobiles",price:89999,old:105000,rating:"4.8",badge:"Hot",img:"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80"},
  {id:2,name:"Asus Vivobook 15",desc:"Intel Core i5 | 8GB | 512GB SSD",category:"Laptops",price:54999,old:62000,rating:"4.6",badge:"New",img:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80"},
- {id:3,name:"AirPods Pro (2nd Gen)",desc:"Wireless earbuds",category:"Audio",price:24999,old:32000,rating:"4.7",badge:"New",img:"https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=600&q=80"},
+ {id:3,name:"3 kva Honda Generator",desc:"Honda Generator",category:"Power",price:55000,old:60000,rating:"4.7",badge:"New",img:"https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=600&q=80"},
  {id:4,name:"Samsung Galaxy Watch 6",desc:"Bluetooth | AMOLED Display",category:"Smart Watch",price:21999,old:26999,rating:"4.5",badge:"-15%",img:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"},
  {id:5,name:"Sony WH-CH720N",desc:"Wireless Noise Cancelling",category:"Accessories",price:18999,old:21000,rating:"4.4",badge:"-10%",img:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"},
  {id:6,name:"Gaming Controller",desc:"Wireless game controller",category:"Gaming",price:4999,old:5999,rating:"4.5",badge:"Popular",img:"https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?auto=format&fit=crop&w=600&q=80"},
@@ -118,7 +118,7 @@ document.getElementById("cartBtn").addEventListener("click",()=>{
  const lines=cart.map(item=>{const p=products.find(x=>x.id===item.id);return `${p.name} x ${item.qty} — ${money(p.price*item.qty)}`});
  const total=cart.reduce((sum,item)=>sum+products.find(p=>p.id===item.id).price*item.qty,0);
  const message=`Hello Online Gadget Sales! I want to order:\n${lines.join("\n")}\nTotal: ${money(total)}\nPlease confirm availability and delivery.`;
- window.open("https://wa.me/8801712345678?text="+encodeURIComponent(message),"_blank","noopener");
+ window.open("https://wa.me/8801717709878?text="+encodeURIComponent(message),"_blank","noopener");
 });
 document.getElementById("whatsappBanner").href="https://wa.me/8801712345678?text="+encodeURIComponent("Hello Online Gadget Sales! I would like to know more about your products.");
 document.getElementById("accountBtn").addEventListener("click",()=>showToast("Customer account feature is not set up yet."));
